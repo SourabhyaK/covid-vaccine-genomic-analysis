@@ -1,0 +1,7 @@
+"seq1","seq2","pct_identity","score"
+"Pfizer_BNT162b2","Moderna_mRNA1273",100,6727
+"Pfizer_BNT162b2","AstraZeneca_ChAdOx1",99.84,6710
+"Pfizer_BNT162b2","Novavax_NVXCoV2373",99.76,6715
+"Moderna_mRNA1273","AstraZeneca_ChAdOx1",99.84,6710
+"Moderna_mRNA1273","Novavax_NVXCoV2373",99.76,6715
+"AstraZeneca_ChAdOx1","Novavax_NVXCoV2373",99.61,6698

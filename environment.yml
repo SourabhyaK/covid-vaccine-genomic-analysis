@@ -1,0 +1,12 @@
+name: covid-vaccine-genomic-analysis
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - numpy>=1.24
+  - matplotlib>=3.7
+  - pytest>=7.4
+  - r-base=4.3
+  - bioconductor-biostrings
+  - bioconductor-msa

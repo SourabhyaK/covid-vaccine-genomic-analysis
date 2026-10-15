@@ -1,0 +1,4 @@
+Pfizer BNT162b2: 95.0% - Polack et al. 2020, NEJM
+Moderna mRNA-1273: 94.1% - Baden et al. 2021, NEJM
+AstraZeneca ChAdOx1-S: 74.0% - Falsey et al. 2021, NEJM (US trial)
+Novavax NVX-CoV2373: 89.7% - Heath et al. 2021, NEJM (UK trial)
