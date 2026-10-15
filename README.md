@@ -174,6 +174,20 @@ sanity checks).
 
 ## Reproducing the full environment
 
+**Option A — Docker (recommended, zero manual setup):**
+
+```bash
+docker build -t covid-vaccine-analysis .
+docker run --rm covid-vaccine-analysis
+```
+
+This builds a container with R, Bioconductor (Biostrings, msa), and Python
+already installed and pinned, then runs the full pipeline inside it: the
+22-test pytest suite, the Python prototype, and the real R/Biostrings
+analysis — in that order, with no local installation required at all.
+
+**Option B — conda (local environment):**
+
 ```bash
 conda env create -f environment.yml
 conda activate covid-vaccine-genomic-analysis
