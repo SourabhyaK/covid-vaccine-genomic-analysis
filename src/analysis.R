@@ -73,8 +73,12 @@ if (requireNamespace("msa", quietly = TRUE)) {
   library(msa)
   alignment <- msa(proteins, method = "ClustalOmega")
   print(alignment, show = "complete")
-  msaPrettyPrint(alignment, output = "pdf", file = "../results/msa_4_vaccines.pdf",
-                  askForOverwrite = FALSE, verbose = FALSE)
+  tryCatch({
+    msaPrettyPrint(alignment, output = "pdf", file = "../results/msa_4_vaccines.pdf",
+                    askForOverwrite = FALSE, verbose = FALSE)
+  }, error = function(e) {
+    message("Skipping PDF export of the alignment figure (pdflatex not installed in this environment): ", conditionMessage(e))
+  })
 } else {
   message("Install the 'msa' package for the full 4-way visual alignment: ",
           "BiocManager::install('msa')")

@@ -174,11 +174,13 @@ sanity checks).
 
 ## Reproducing the full environment
 
+**Verified working end-to-end via Docker.**
+
 **Option A — Docker (recommended, zero manual setup):**
 
 ```bash
-docker build -t covid-vaccine-analysis .
-docker run --rm covid-vaccine-analysis
+docker build -t covid-vaccine-genomic-analysis .
+docker run --rm -v $(pwd)/results:/pipeline/results covid-vaccine-genomic-analysis
 ```
 
 This builds a container with R, Bioconductor (Biostrings, msa), and Python
